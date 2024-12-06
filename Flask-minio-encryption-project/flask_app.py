@@ -12,8 +12,8 @@ app = Flask(__name__)
 
 minio_client = Minio(
     "localhost:9000",
-    access_key="minioadmin",
-    secret_key="minioadmin",
+    access_key="", # access key here
+    secret_key="", # secret key here
     secure=False
 )
 
@@ -21,8 +21,8 @@ minio_client = Minio(
 def get_db_connection():
     return psycopg2.connect(
         dbname="key_storage",
-        user="wlk",
-        password="secretdbpw",
+        user="", # database user
+        password="", # database password
         host="localhost",
         port="5432"
     )
