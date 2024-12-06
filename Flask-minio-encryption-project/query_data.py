@@ -4,8 +4,8 @@ from minio.error import S3Error
 
 minio_client = Minio(
     "localhost:9000",
-    access_key="", # access key here
-    secret_key="", # secret key here
+    access_key="minioadmin",
+    secret_key="minioadmin",
     secure=False
 )
 
