@@ -29,6 +29,7 @@ This project implements a Flask-based web service that handles JSON data sent to
 2. Install dependencies:
 - pip install -r requirements.txt
 3. Set up the PostgreSQL database (key_storage) and table:
+  
 CREATE TABLE object_metadata (
    object_id TEXT PRIMARY KEY,
    encryption_key TEXT,
@@ -36,6 +37,7 @@ CREATE TABLE object_metadata (
    tag TEXT,
    owner TEXT
 );
+
 4. Run Minio
 5. Run the Flask server:
 - python flask_app.py
