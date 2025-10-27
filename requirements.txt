@@ -2,5 +2,5 @@ flask
 minio
 psycopg2-binary
 pycryptodome
-
 requests
+
